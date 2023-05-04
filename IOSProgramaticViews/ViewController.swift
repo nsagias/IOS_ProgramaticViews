@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // Create global variable
     var firstLabel: UILabel = UILabel();
 
     override func viewDidLoad() {
@@ -66,7 +67,7 @@ class ViewController: UIViewController {
     }
 
     @objc func firstAction() -> Void {
-        print("Button touched")
+        firstLabel.text = "Button Pressed"
     }
 }
 
