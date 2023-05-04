@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Label/ Title
         // Initialize view height and width from environment
         let height = view.frame.size.height
         let width = view.frame.size.width
@@ -33,6 +34,21 @@ class ViewController: UIViewController {
         
         // Add label to view
         view.addSubview(firstLabel)
+        
+        // Button
+        let firstButton =  UIButton()
+        
+        // Add display name of button (title)
+        firstButton.setTitle("First Button", for: UIControl.State.normal)
+        
+        // Add colour of text of title
+        firstButton.setTitleColor(UIColor.blue, for: UIControl.State.normal)
+        
+        // Add button dimension
+        firstButton.frame = CGRect(x: width * 0.4, y: height * 0.7, width: 200, height: 100)
+        
+        // Add button to view
+        view.addSubview(firstButton)
         
     }
 
