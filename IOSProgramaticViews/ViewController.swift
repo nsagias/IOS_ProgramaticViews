@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var firstLabel: UILabel = UILabel();
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +19,6 @@ class ViewController: UIViewController {
         let height = view.frame.size.height
         let width = view.frame.size.width
 
-        let firstLabel: UILabel = UILabel();
         // Static Text to display
         firstLabel.text = "First Code"
         
