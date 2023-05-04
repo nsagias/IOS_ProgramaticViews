@@ -45,10 +45,16 @@ class ViewController: UIViewController {
         firstButton.setTitleColor(UIColor.blue, for: UIControl.State.normal)
         
         // Add button dimension
-        firstButton.frame = CGRect(x: width * 0.4, y: height * 0.7, width: 200, height: 100)
+        firstButton.frame = CGRect(
+            x: width * 0.5 - 100,
+            y: height * 0.6,
+            width: 200,
+            height: 100
+        )
         
         // Add button to view
         view.addSubview(firstButton)
+        
         
     }
 
