@@ -55,9 +55,17 @@ class ViewController: UIViewController {
         // Add button to view
         view.addSubview(firstButton)
         
+        // Add action to button
+        firstButton.addTarget(
+            self,
+            action: #selector(ViewController.firstAction),
+            for: UIControl.Event.touchUpInside
+        )
         
     }
 
-    
+    @objc func firstAction() -> Void {
+        print("Button touched")
+    }
 }
 
