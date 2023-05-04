@@ -25,8 +25,8 @@ class ViewController: UIViewController {
         
         // Add display dimensions
         firstLabel.frame = CGRect(
-            x: width / 2,
-            y: height * 0.5,
+            x: width * 0.5 - width * 0.8 * 0.5,
+            y: height * 0.5 - 50/2,
             width: width * 0.8,
             height: 50
         )
