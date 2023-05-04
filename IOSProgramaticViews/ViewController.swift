@@ -12,10 +12,26 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Initialize view height and width from environment
+        let height = view.frame.size.height
+        let width = view.frame.size.width
+
         let firstLabel: UILabel = UILabel();
+        // Static Text to display
         firstLabel.text = "First Code"
+        
+        // Center Text insight label
         firstLabel.textAlignment = .center
-        firstLabel.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        
+        // Add display dimensions
+        firstLabel.frame = CGRect(
+            x: width / 2,
+            y: height * 0.5,
+            width: width * 0.8,
+            height: 50
+        )
+        
+        // Add label to view
         view.addSubview(firstLabel)
         
     }
